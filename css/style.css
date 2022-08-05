@@ -519,3 +519,45 @@ foreignObject {
 .footer__menu-link:hover {
   color: #CB0E0E;
 }
+.menu-btn{
+  display: none;
+  width: 40px;
+  padding: 0;
+}
+.menu-btn span{
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+}
+.menu-btn span::before,
+.menu-btn span::after{
+  content: '';
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+.menu-btn span::before{
+  top: -10px;
+}
+.menu-btn span::after{
+  top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .login{
+    margin-right: 0;
+  }
+}
+
+
+@media (max-width: 895px) {
+  .menu-btn{
+    display: block;
+  }
+  .menu__list{
+    display: none;
+  }
+}
