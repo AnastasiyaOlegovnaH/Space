@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: border-box;
 }
 
@@ -30,11 +30,11 @@
 }
 
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
-button{
+button {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -118,10 +118,10 @@ body{
   font-weight: 400;
   margin-bottom: 20px;
  }
- .header__title span{
+ .header__title span {
   font-size: 110px;
  }
- .header__text{
+ .header__text {
   font-size: 24px;
   line-height: 29px;
   display: flex;
@@ -129,7 +129,7 @@ body{
   flex-wrap: wrap;
   margin-bottom: 50px;
  }
- .header__btn{
+ .header__btn {
   font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
@@ -149,37 +149,37 @@ body{
   font-size: 14px;
   line-height: 17px;
 }
-.header__description-text + .header__description-text{
+.header__description-text + .header__description-text {
   margin-left: 52px;
 }
-.about{
+.about {
   background-image: url(../images/about-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.about__item{
+.about__item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 150px;
 }
-.about__item:nth-child(odd){
+.about__item:nth-child(odd) {
   flex-direction: row-reverse;
 }
-.about__img{
+.about__img {
   max-width: 100%;
 }
-.about__content{
+.about__content {
   width: 600px;
 }
-.about__content-title{
+.about__content-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   margin-bottom: 5px;
 }
-.about__content-subtitle{
+.about__content-subtitle {
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
@@ -187,18 +187,18 @@ body{
   margin-bottom: 30px;
   text-transform: uppercase;
 }
-.about__content-text{
+.about__content-text {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.about__content-text p{
+.about__content-text p {
   width: 165px;
 }
 .about__table {
   margin-bottom: 50px;
 }
-.about__table-caption{
+.about__table-caption {
   caption-side: bottom;
   text-align: left;
   margin-top: 20px;
@@ -210,7 +210,7 @@ body{
   border-left: none;
   border-right: none;
 }
-.about__table-tr + .about__table-tr{
+.about__table-tr + .about__table-tr {
   font-size: 36px;
   line-height: 43px;
   font-weight: bold;
@@ -219,56 +219,55 @@ body{
 .about__table-td {
   padding: 10px 30px 10px 0;
 }
-.about__table-td span{
+.about__table-td span {
   font-size: 14px;
   line-height: 17px;
   display: block;
 }
-.how-to{
+.how-to {
   background-image: url(../images/howto-bg.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 100px;
 }
-.how-to__box{
+.how-to__box {
   text-align: center;
-  
 }
 .how-to__box circle,
 .how-to__box text,
-foreignObject{
+foreignObject {
   transition: all .5s;
   cursor: pointer;
   font-size: 18px;
 }
-.how-to__box g:hover circle{
+.how-to__box g:hover circle {
   r: 20px;
   fill: #036CCA;
 }
-.how-to__box g:hover text{
+.how-to__box g:hover text {
   fill: #036CCA;
   font-size: 36px;
 }
-.how-to__box g:hover foreignObject{
+.how-to__box g:hover foreignObject {
   color: #036CCA;
   font-size: 22px;
 }
-foreignObject{
+foreignObject {
   text-align: left;
 }
-.to-book{
+.to-book {
   background-image: url(../images/tobook-bg.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
-.to-book__inner{
+.to-book__inner {
   display: flex;
   justify-content: space-between;
 }
-.to-book__text{
+.to-book__text {
   width: 165px;
   font-size: 14px;
   line-height: 17px;
@@ -276,25 +275,25 @@ foreignObject{
   margin-left: auto;
   margin-right: 52px;
 }
-.to-book__text+ .to-book__text{
+.to-book__text+ .to-book__text {
   margin-right: 0;
   margin-left: 0;
 }
-.info{
+.info {
   background-image: url(../images/info-bg.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 100px;
 }
-.special-offer__inner{
+.special-offer__inner {
   display: flex;
   justify-content: space-between;
 }
-.special-offer__item{
+.special-offer__item {
   width: 500px;
 }
-.special-offer__item-box{
+.special-offer__item-box {
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -304,22 +303,112 @@ foreignObject{
   padding: 40px 75px;
   text-align: center;
 }
-.special-offer__item-text{
+.special-offer__item-text {
   font-size: 24px;
   line-height: 29px;
   width: 236px;
   margin: 0 auto;
 }
-.special-offer__item-text span{
+.special-offer__item-text span {
   color: #CB0E0E;
 }
-.special-offer__old-price{
+.special-offer__old-price {
   text-align: right;
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 16px;
+  position: relative
 }
-.special-offer__new-price{
+.special-offer__old-price::before {
+  content: '';
+  position: absolute;
+  width: 68px;
+  height: 1px;
+  background-color: #CB0E0E;
+  top: 7px;
+  right: 0;
+  transform: rotate(15deg);
+}
+.special-offer__new-price {
   font-size: 48px;
   line-height: 57px;
+}
+.special-offer__btn{
+  width: 100%;
+}
+.servises {
+  padding-bottom: 200px;
+}
+.servises__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.servises__box-list {
+  width: 620px;
+  margin-right: 80px;
+  font-size: 24px;
+  line-height: 29px;
+}
+.servises__list-title {
+  margin-bottom: 25px;
+}
+.servises__list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.servises__list-item {
+  padding-left: 36px;
+  position: relative;
+}
+.servises__list-item::before {
+  content:'';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 0;
+  top: 4px;
+}
+.servises__description {
+  font-size: 12px;
+  line-height: 14px;
+}
+.servises__buttons {
+  width: 500px;
+}
+.servises__btn {
+  width: 100%;
+}
+.servises__btn--first{
+  margin-bottom: 50px;
+  position: relative;
+}
+.servises__btn--first::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 43px;
+  background-image: url(../images/photo.png);
+  width: 192px;
+  height: 150px;
+}
+.slider {
+  text-align: center;
+}
+.slider__inner {
+  margin-bottom: 50px;
+  border: 1px solid #fff;
+  padding: 100px 0;
+}
+.slider__box {
+}
+.slider__box-item {
+}
+.slider__box-img {
+}
+.slider__description {
+  font-family: 'spaceagecyrillic';
+  font-size: 24px;
+  line-height: 30px;
 }
