@@ -550,6 +550,7 @@ foreignObject {
 
 
 
+
 @media (max-width: 1160px){
   .about__item{
     display: block;
@@ -577,10 +578,43 @@ foreignObject {
 
 
 
+@media (max-width: 1050px){
+  .special-offer__inner{
+    display: block;
+  }
+  .special-offer__item{
+    width: 100%;
+  }
+  .special-offer__btn{
+    margin-bottom: 20px;
+  }
+  .contacts__inner{
+    display: block;
+  }
+  .contacts__box{
+    width: 100%;
+  }
+  .contacts__guarantees{
+    margin: 0 auto;
+  }
+}
+
+
+
 @media (max-width: 1024px) {
   .login{
     margin-right: 0;
   }
+  .to-book__inner{
+    display: block;
+  }
+  .to-book__text {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
 }
 
 
@@ -634,17 +668,63 @@ foreignObject {
   }
   .how-to__box-list{
     display: block;
-    /* list-style: none; */
-    padding-left: 40px;
+    list-style: none;
   }
   .how-to__box-item{
-    padding-bottom: 40px;
-    text-align-last: left;
+    padding-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    position: relative;
+    border-left: 1px solid #fff;
+  }
+  .how-to__box-item:last-child{
+    border-left: none;
+  }
+  .how-to__box-item::before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .servises__inner{
+    display: block;
+  }
+  .servises__box-list{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 170px;
+  }
+  .servises__buttons{
+    max-width: 500px;
+    width: auto;
+    margin: 0 auto;
+  }
+  .slick-slide img{
+    max-width: 100%;
   }
 }
 
-
-@media (max-width: 620px){
+@media (max-width: 720px){
+  .servises{
+    padding-bottom: 50px;
+  }
+  .slider__inner{
+    padding: 0;
+  }
+  .servises__description{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .info{
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 640px){
   .header__title{
     font-size: 34px;
     line-height: 30px;
@@ -706,7 +786,75 @@ foreignObject {
     line-height: 22px;
     font-weight: 400;
   }
+  .to-book{
+    background-position: top left;
+  }
+  .contacts__guarantees-img{
+    max-width: 100%;
+  }
+  .contacts__guarantees{
+    width: 100%;
+  }
+  .service__title{
+    font-size: 25px;
+  }
 }
+
+@media (max-width: 570px){
+  .footer__inner{
+    display: block;
+  }
+  .footer__text{
+    width: 100%;
+    margin-right: 0;
+  }
+  .footer__text p + p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .footer__menu,
+  .footer__links{
+    margin-right: 0;
+    width: 100%;
+  }
+  .footer__menu{
+    margin-bottom: 50px;
+  }
+  .footer{
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px){
+  .title{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .special-offer__new-price{
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .servises__box-list{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .special-offer__item-box{
+    padding: 20px 10px;
+  }
+  .contacts__guarantees-text{
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+
+
+@media (max-width: 375px){
+  .servises__btn--first::before{
+    bottom: 63px;
+  }
+}
+
 
 
 @media (max-width: 360px){
